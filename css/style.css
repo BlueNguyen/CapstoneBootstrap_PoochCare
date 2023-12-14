@@ -98,6 +98,38 @@ li a.search-search {
   position: relative;
   transition: all 0.5s;
 }
+/* BANNER */
+.carousel-indicators li{
+  border-radius: 25px;
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  border-top: 0;
+  border-bottom: 0;
+}
+.carousel-indicators .active{
+  background: #189a46;
+  width: 30px;
+  border-radius: 25px;
+}
+.btn-white{
+  background: #fff;
+  color: #189a46;
+  border-color: #fff ;
+}
+.btn-white:hover{
+  background: #fff;
+  color: #189a46;
+}
+#carouselPoochCaptions .border-btn{
+  background: transparent;
+  border: 2px solid #fff;
+}
+#carouselPoochCaptions .border-btn:hover{
+  background: #fff;
+  color: #189a46;
+}
 
 /* ABOUT */
 .titlePooch.align-items-center {
@@ -355,7 +387,8 @@ animation: ripple 1s linear infinite ;
 } 
 .form__pooch .subscribe__form .btn{
   flex-basis: 27%;
-  margin-top: 0;
+  margin: 0;
+  text-align: center;
 }
 .form__pooch .subscribe input.form-control{
   flex-basis: 70%;
@@ -363,7 +396,52 @@ animation: ripple 1s linear infinite ;
   padding: 0 20px;
   height: 60px;
 }
-
+.form__pooch .button__style{
+  padding: 15px 35px;
+}
+/* FOOTER */
+.footer{
+  background: #111;
+}
+.footer h6.footer__title{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+.footer ul.social__icon{
+  margin-top: 3px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.footer ul.social__icon li{
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+.footer .footer__list ul li{
+  margin-bottom: 5px;
+  list-style: none;
+}
+.footer .footer__list ul li p{
+  color: #696969;
+  font-weight: normal;
+  line-height: 28px;
+}
+.footer .footer__list ul li a{
+  color: #696969;
+  line-height: 28px;
+}
+.footer .footer__list ul li a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.footer .footer__copyright a{
+  color: #f53626;
+  opacity: 0.9;
+}
 
 
 
