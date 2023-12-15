@@ -99,6 +99,40 @@ li a.search-search {
   transition: all 0.5s;
 }
 /* BANNER */
+#carouselPoochCaptions .carousel-caption{
+  transform: translate(5%,-35%);
+}
+.carousel-inner .banner-infor-bg{
+  max-width: 700px;
+}
+.carousel .banner__top1, .banner__top3, .banner__top4{
+  background: url(../image/banner1.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+.carousel .banner__top2{
+  background: url(../image/banner2.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+.carousel .banner__view{
+  position: relative;
+  z-index: 0;
+  display: grid;
+  align-items: center;
+  padding: 3em 0;
+}
+.carousel .banner__view::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  background-color: #0c0c0c;
+  opacity: 0.6;
+  z-index: -1;
+}
 .carousel-indicators li{
   border-radius: 25px;
   background: #fff;
@@ -129,6 +163,19 @@ li a.search-search {
 #carouselPoochCaptions .border-btn:hover{
   background: #fff;
   color: #189a46;
+}
+.banner__infor h5{
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.carousel-inner .banner__infor p{
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.9;
+  text-transform: capitalize;
+  font-size: 1.2em;
 }
 
 /* ABOUT */
@@ -441,6 +488,15 @@ animation: ripple 1s linear infinite ;
 .footer .footer__copyright a{
   color: #f53626;
   opacity: 0.9;
+}
+.footer .footer__copyright{
+  color: #696969;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.footer__bottom{
+  background: #111;
+  border-top: 1px solid rgba(103, 99, 99, 0.14) ;
 }
 
 
