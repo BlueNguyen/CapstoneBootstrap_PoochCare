@@ -13,18 +13,30 @@
       crossorigin="anonymous"
     />
 
-    <!-- Font Jost Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Jost:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,700;1,400&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Jost:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@0,300;0,700;1,400&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- SLICK CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -35,9 +47,9 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="nav-fixed">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
           <h1><a class="navbar-brand" href="#">Pooch Care</a></h1>
           <button
             class="navbar-toggler"
@@ -130,7 +142,9 @@
           <div class="banner__top1 banner__view"></div>
           <div class="banner__infor">
             <div class="container">
-              <div class="carousel-caption d-none d-md-block text-left banner-infor-bg">
+              <div
+                class="carousel-caption d-none d-md-block text-left banner-infor-bg"
+              >
                 <h5>Quality Things for Loving Pets</h5>
                 <p>Keeps your Pet Smiling</p>
                 <a
@@ -150,7 +164,9 @@
           <div class="banner__top2 banner__view"></div>
           <div class="banner__infor">
             <div class="container">
-              <div class="carousel-caption d-none d-md-block text-left banner-infor-bg ml-lg-auto">
+              <div
+                class="carousel-caption d-none d-md-block text-left banner-infor-bg ml-lg-auto"
+              >
                 <h5>Delivering happiness for Pets</h5>
                 <p>For the love of pets</p>
                 <a
@@ -170,7 +186,9 @@
           <div class="banner__top3 banner__view"></div>
           <div class="banner__infor">
             <div class="container">
-              <div class="carousel-caption d-none d-md-block text-left banner-infor-bg">
+              <div
+                class="carousel-caption d-none d-md-block text-left banner-infor-bg"
+              >
                 <h5>Quality Things for Loving Pets</h5>
                 <p>Keeps your Pet Smiling</p>
                 <a
@@ -190,7 +208,9 @@
           <div class="banner__top4 banner__view"></div>
           <div class="banner__infor">
             <div class="container">
-              <div class="carousel-caption d-none d-md-block text-left banner-infor-bg ml-lg-auto">
+              <div
+                class="carousel-caption d-none d-md-block text-left banner-infor-bg ml-lg-auto"
+              >
                 <h5>Delivering happiness for Pets</h5>
                 <p>We help your Projects</p>
                 <a
@@ -207,7 +227,6 @@
           </div>
         </div>
       </div>
-      
     </div>
 
     <!-- ABOUT -->
@@ -506,57 +525,191 @@
           </div>
 
           <div class="test__width">
-            <div>
-              <div class="test__item">
-                <div class="test__content">
-                  <div class="test__text">
-                    <blockquote>
-                      <q
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit beatae laudantium voluptate rem ullam dolore
-                        nisi voluptatibus esse quasi, doloribus tempora. Dolores
-                        molestias adipisci dolor sit amet!.</q
-                      >
-                    </blockquote>
-                    <div class="test__des">
-                      <div class="test__img">
-                        <img
-                          src="./image/f1.jpg"
-                          class="img-fluid"
-                          alt="f1-image"
-                        />
-                      </div>
-                      <div class="des__title align-self">
-                        <h3>John wilson</h3>
-                        <p class="indentity">Example City</p>
+            <div class="test__carousel">
+              <div class="test__stage__outer">
+                <div class="test__stage">
+                  <div class="test__item active">
+                    <div class="item">
+                      <div class="test__content">
+                        <div class="test__text">
+                          <blockquote>
+                            <q
+                              >Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse
+                              quasi, doloribus tempora. Dolores molestias
+                              adipisci dolor sit amet!.</q
+                            >
+                          </blockquote>
+                          <div class="test__des">
+                            <div class="test__img">
+                              <img
+                                src="./image/f1.jpg"
+                                class="img-fluid"
+                                alt="f1-image"
+                              />
+                            </div>
+                            <div class="des__title align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="test__item">
-                <div class="test__content">
-                  <div class="test__text">
-                    <blockquote>
-                      <q
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Velit beatae laudantium voluptate rem ullam dolore
-                        nisi voluptatibus esse quasi, doloribus tempora. Dolores
-                        molestias adipisci dolor sit amet!.</q
-                      >
-                    </blockquote>
-                    <div class="test__des">
-                      <div class="test__img">
-                        <img
-                          src="./image/f1.jpg"
-                          class="img-fluid"
-                          alt="f1-image"
-                        />
+                  <div class="test__item active">
+                    <div class="item">
+                      <div class="test__content">
+                        <div class="test__text">
+                          <blockquote>
+                            <q
+                              >Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse
+                              quasi, doloribus tempora. Dolores molestias
+                              adipisci dolor sit amet!.</q
+                            >
+                          </blockquote>
+                          <div class="test__des">
+                            <div class="test__img">
+                              <img
+                                src="./image/f2.jpg"
+                                class="img-fluid"
+                                alt="f2-image"
+                              />
+                            </div>
+                            <div class="des__title align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="des__title align-self">
-                        <h3>John wilson</h3>
-                        <p class="indentity">Example City</p>
+                    </div>
+                  </div>
+
+                  <div class="test__item">
+                    <div class="item">
+                      <div class="test__content">
+                        <div class="test__text">
+                          <blockquote>
+                            <q
+                              >Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse
+                              quasi, doloribus tempora. Dolores molestias
+                              adipisci dolor sit amet!.</q
+                            >
+                          </blockquote>
+                          <div class="test__des">
+                            <div class="test__img">
+                              <img
+                                src="./image/f3.jpg"
+                                class="img-fluid"
+                                alt="f3-image"
+                              />
+                            </div>
+                            <div class="des__title align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="test__item">
+                    <div class="item">
+                      <div class="test__content">
+                        <div class="test__text">
+                          <blockquote>
+                            <q
+                              >Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse
+                              quasi, doloribus tempora. Dolores molestias
+                              adipisci dolor sit amet!.</q
+                            >
+                          </blockquote>
+                          <div class="test__des">
+                            <div class="test__img">
+                              <img
+                                src="./image/f4.jpg"
+                                class="img-fluid"
+                                alt="f4-image"
+                              />
+                            </div>
+                            <div class="des__title align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="test__item">
+                    <div class="item">
+                      <div class="test__content">
+                        <div class="test__text">
+                          <blockquote>
+                            <q
+                              >Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse
+                              quasi, doloribus tempora. Dolores molestias
+                              adipisci dolor sit amet!.</q
+                            >
+                          </blockquote>
+                          <div class="test__des">
+                            <div class="test__img">
+                              <img
+                                src="./image/f2.jpg"
+                                class="img-fluid"
+                                alt="f2-image"
+                              />
+                            </div>
+                            <div class="des__title align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="test__item">
+                    <div class="item">
+                      <div class="test__content">
+                        <div class="test__text">
+                          <blockquote>
+                            <q
+                              >Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse
+                              quasi, doloribus tempora. Dolores molestias
+                              adipisci dolor sit amet!.</q
+                            >
+                          </blockquote>
+                          <div class="test__des">
+                            <div class="test__img">
+                              <img
+                                src="./image/f3.jpg"
+                                class="img-fluid"
+                                alt="f3-image"
+                              />
+                            </div>
+                            <div class="des__title align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -715,6 +868,12 @@
       </footer>
     </section>
 
+<!-- BACK TO TOP -->
+<a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+
     <!-- JQUERY -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -741,6 +900,42 @@
         time: 4000,
         delay: 10,
       });
+    </script>
+    <!-- THƯ VIỆN HỖ TRỢ SLICK CAROUSEL-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".test__stage").slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+        });
+      });
+    </script>
+    <!-- Back To Top JS -->
+    <script src="./js/util.js"></script>
+    <script src="./js/mainBackToTop.js"></script>
+    <!-- Nav Bar JS -->
+    <script>
+      let mainNav = document.getElementById("mainNav");
+      let listNav = document.getElementsByTagName("li");
+      for (let i = 0; i < listNav.length; i++) {
+        listNav[i].addEventListener("click", function () {
+          let current = document.querySelector("#mainNav .active");
+          // Xoá class active của thẻ đang đc gắn
+          current.className = current.className.replace("active", "");
+          // Thêm class active vào cho thẻ đang đc click
+          this.className += "active";
+        });
+      }
     </script>
     <!-- Magnific Popup JS -->
     <script src="magnific-popup/jquery.magnific-popup.js"></script>

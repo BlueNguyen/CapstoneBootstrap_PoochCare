@@ -67,6 +67,16 @@ ul li {
 }
 
 /* HEADER */
+header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+header.nav-fixed{
+  background: #fff;
+  height: 80px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
 .navbar .navbar-brand {
   font-size: 34px;
   font-weight: 600;
@@ -82,7 +92,7 @@ li a.search-search {
   font-size: 1rem;
   width: 45px;
   height: 45px;
-  line-height: 45px;
+  line-height: 34px;
   border-radius: 45px;
   display: inline-block;
   text-align: center;
@@ -100,7 +110,7 @@ li a.search-search {
 }
 /* BANNER */
 #carouselPoochCaptions .carousel-caption{
-  transform: translate(5%,-35%);
+  transform: translate(5%,-40%);
 }
 .carousel-inner .banner-infor-bg{
   max-width: 700px;
@@ -108,12 +118,13 @@ li a.search-search {
 .carousel .banner__top1, .banner__top3, .banner__top4{
   background: url(../image/banner1.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
+  background-position: top;
 }
 .carousel .banner__top2{
   background: url(../image/banner2.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 .carousel .banner__view{
   position: relative;
@@ -420,10 +431,105 @@ animation: ripple 1s linear infinite ;
 .test{
   background: rgba(147, 107, 232, 0.05);
 }
+.test blockquote q {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+}
+.test blockquote q::before{
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.8;
+  color: #189a46;
+  display: inline-block;
+  padding-top: 8px;
+}
+.test .test__text blockquote{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin: 0 1.5em 1.5em;
+}
 .test .test__text{
   display: block;
   padding: 40px 30px;
   background: #fff;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+}
+p.indentity{
+  font-size: 17px;
+  color: #777;
+  margin-bottom: 0;
+  text-align: left;
+  opacity: 0.8;
+}
+.test__text .des__title h3{
+  font-size: 20px;
+  margin: 0;
+}
+.des__title{
+  margin: 0;
+  margin-left: 20px;
+  text-align: left;
+}
+.test .test__des{
+  display: flex;
+  text-align: center;
+}
+.align-self{
+  align-self: center;
+}
+/* .test .test__text img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-height: 100%;
+} */
+.test .test__img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* .test .test__stage__outer, .test__stage{
+  overflow: hidden;
+} */
+/* .test__stage{
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0s;
+  position: relative;
+} */
+.test .test__item{
+  width: 515px;
+  margin-right: 20px;
+}
+.test .test__width{
+  max-width: 1050px;
+  margin: auto;
+}
+.slick-dots{
+  position: inherit;
+  margin-top: 80px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+.slick-dots li button:before{
+  font-size: 10px;
+}
+.slick-dots li.slick-active button:before{
+  opacity: 0;
+}
+.slick-dots li.slick-active button {
+  background: #189a46;
+  width: 30px;
+  height: 10px;
+  border-radius: 25px;
 }
 /* FORM POOCH  */
 .form__pooch .subscribe{
@@ -497,6 +603,30 @@ animation: ripple 1s linear infinite ;
 .footer__bottom{
   background: #111;
   border-top: 1px solid rgba(103, 99, 99, 0.14) ;
+}
+/* BACK TO TOP  */
+.backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+
+  visibility: hidden;
+  opacity: 0;
+}
+.backToTop i {
+  background: #189a46;
+  color: #fff;
+  border: 2px solid #189a46;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 
