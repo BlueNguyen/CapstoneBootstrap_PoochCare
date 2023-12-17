@@ -45,7 +45,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body id="myBody">
     <!-- HEADER -->
     <header class="nav-fixed">
       <div class="container">
@@ -113,7 +113,7 @@
                 <div class="theme-switch-wrapper">
                   <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
-                    <div class="mode-container">
+                    <div class="mode-container" id="switchToggle">
                       <i class="gg-sun"></i>
                       <i class="gg-moon"></i>
                     </div>
@@ -936,6 +936,12 @@
           this.className += "active";
         });
       }
+    </script>
+    <!-- DARK LIGHT THEME -->
+    <script>
+      document.getElementById("switchToggle").onclick = function (){
+        document.getElementById("myBody").classList.toggle("dark");
+      };
     </script>
     <!-- Magnific Popup JS -->
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
