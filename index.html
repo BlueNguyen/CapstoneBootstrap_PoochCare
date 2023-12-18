@@ -14,9 +14,12 @@
     />
 
     <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Jost:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@0,300;0,700;1,400&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;700&family=Jost:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@0,300;0,700;1,400&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -41,8 +44,14 @@
       referrerpolicy="no-referrer"
     />
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body id="myBody">
@@ -55,7 +64,7 @@
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarSupportedCare"
+            data-target="#navbarSupportedPooch"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -63,7 +72,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedCare">
+          <div class="collapse navbar-collapse" id="navbarSupportedPooch">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#"
@@ -111,13 +120,14 @@
             <div class="mobile-position DarkandLight">
               <nav class="navigation">
                 <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="mode-container" id="switchToggle">
-                      <i class="gg-sun"></i>
-                      <i class="gg-moon"></i>
-                    </div>
-                  </label>
+                  <div
+                    class="mode-container"
+                    id="switchToggle"
+                    title="Click to switch theme"
+                  >
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
                 </div>
               </nav>
             </div>
@@ -493,7 +503,7 @@
                   alt="banner2-image"
                 />
                 <a
-                  href="#vimeo__video"
+                  href="#my-popup"
                   class="play__view position-absolute text-center open-popup-link popup-with-zoom-anim"
                 >
                   <span class="video__icon">
@@ -501,7 +511,7 @@
                   </span>
                 </a>
 
-                <div id="vimeo__video" class="zoom-anim-dialog mfp-hide">
+                <div id="my-popup" class="zoom-anim-dialog mfp-hide">
                   <iframe
                     src="https://player.vimeo.com/video/101587706"
                     frameborder="0"
@@ -868,11 +878,10 @@
       </footer>
     </section>
 
-<!-- BACK TO TOP -->
-<a href="#" class="backToTop cd-top text-replace js-cd-top">
+    <!-- BACK TO TOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
       <i class="fa fa-angle-up"></i>
     </a>
-
 
     <!-- JQUERY -->
     <script
@@ -917,6 +926,25 @@
           slidesToScroll: 2,
           arrows: false,
           dots: true,
+          responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 675,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots:false,
+              },
+            },
+          ],
         });
       });
     </script>
@@ -939,11 +967,35 @@
     </script>
     <!-- DARK LIGHT THEME -->
     <script>
-      document.getElementById("switchToggle").onclick = function (){
+      document.getElementById("switchToggle").onclick = function () {
         document.getElementById("myBody").classList.toggle("dark");
       };
     </script>
     <!-- Magnific Popup JS -->
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
+    </script>
   </body>
 </html>
