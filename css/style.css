@@ -144,7 +144,7 @@ h3.nd__title{
 }
 /* DARK THEME */
 .dark#myBody {
-  background-color: #000000;
+  background-color: #151515;
 }
 .dark#myBody .main-header, .dark#myBody .navbar-collapse#navbarSupportedPooch{
   background: #121212;
@@ -213,6 +213,13 @@ h3.nd__title{
 }
 .dark a.read:hover{
   color: #189a46;
+}
+.dark .test .test__layout{
+  background: #222222;
+}
+.dark .slick-dots li button:before{
+  color: #fff;
+  opacity: 1;
 }
 .dark .form__pooch{
   background: #121212;
